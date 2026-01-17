@@ -1,75 +1,223 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منيو شاورما راهي</title>
-    <style>
-        body { font-family: 'Arial', sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; }
-        header { background-color: #2e7d32; color: white; text-align: center; padding: 20px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .logo { font-size: 24px; font-weight: bold; }
-        .category-nav { display: flex; overflow-x: auto; background: white; padding: 10px; border-bottom: 1px solid #ddd; }
-        .category-nav button { background: #eee; border: none; padding: 8px 15px; margin-left: 10px; border-radius: 20px; white-space: nowrap; cursor: pointer; }
-        .category-nav button.active { background: #2e7d32; color: white; }
-        .container { padding: 15px; }
-        .section-title { font-size: 20px; color: #333; margin: 20px 0 10px; border-right: 4px solid #2e7d32; padding-right: 10px; }
-        .item-card { background: white; border-radius: 12px; display: flex; margin-bottom: 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-        .item-img { width: 100px; height: 100px; background: #ddd; object-fit: cover; }
-        .item-info { padding: 10px; flex: 1; position: relative; }
-        .item-name { font-weight: bold; font-size: 16px; margin-bottom: 5px; }
-        .item-desc { font-size: 12px; color: #666; margin-bottom: 10px; line-height: 1.4; }
-        .item-price { color: #2e7d32; font-weight: bold; font-size: 14px; }
-        footer { background: #333; color: white; text-align: center; padding: 20px; font-size: 14px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شاورما راهي</title>
+
+<meta name="theme-color" content="#ffffff">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header img {
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.section {
+    padding: 15px;
+}
+
+.section h2 {
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+}
+
+.item {
+    margin-bottom: 14px;
+}
+
+.item-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.item-desc {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <div class="logo">🌯 شاورما راهي</div>
-    <div style="font-size: 12px;">أهلاً بكم في عالم المذاق الأصيل</div>
-</header>
-
-<div class="category-nav">
-    <button class="active">الدجاج</button>
-    <button>اللحم</button>
-    <button>الهمبرجر</button>
-    <button>المشروبات</button>
+<div class="header">
+    <img src="logo.png" alt="شاورما راهي">
+    <h1>شاورما راهي</h1>
 </div>
 
-<div class="container">
-    <div class="section-title">قسم الدجاج</div>
-    
-    <div class="item-card">
-        <div class="item-info">
-            <div class="item-name">شاورما راهي دجاج (صغير)</div>
-            <div class="item-desc">خبز صاج، ثوم، بطاطس، خس، معبوج</div>
-            <div class="item-price">7 SAR</div>
-        </div>
-    </div>
+<!-- الدجاج -->
+<div class="section">
+<h2>🍗 الدجاج</h2>
 
-    <div class="item-card">
-        <div class="item-info">
-            <div class="item-name">وجبة شاورما عربي دجاج</div>
-            <div class="item-desc">تقطيع عربي، بطاطس، ثوم، مخلل، مشروب</div>
-            <div class="item-price">15 SAR - 25 SAR</div>
-        </div>
-    </div>
-
-    <div class="section-title">قسم اللحم</div>
-
-    <div class="item-card">
-        <div class="item-info">
-            <div class="item-name">شاورما لحم راهي</div>
-            <div class="item-desc">بقدونس، طماطم، بصل، طحينة، معبوج</div>
-            <div class="item-price">8 SAR</div>
-        </div>
-    </div>
+<div class="item">
+<div class="item-title"><span>شاورما راهي – صغير</span><span>٧ ريال</span></div>
+<div class="item-desc">خبز صاج / ساندوتش – ثوم، بطاطس، خس، معبوج</div>
 </div>
 
-<footer>
-    <p>للتواصل والطلب</p>
-    <p>واتساب: [ضع رقمك هنا]</p>
-</footer>
+<div class="item">
+<div class="item-title"><span>شاورما كلاسيك – صغير</span><span>٧ ريال</span></div>
+<div class="item-desc">خبز صاج / ساندوتش – ثوم، بطاطس، خس</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span>شاورما استوك – صغير</span><span>٧ ريال</span></div>
+<div class="item-desc">خبز صاج / ساندوتش – ثوم، بطاطس، معبوج</div>
+</div>
+
+</div>
+
+<!-- وجبات دجاج -->
+<div class="section">
+<h2>🍗 شاورما دجاج (وجبات)</h2>
+
+<div class="item">
+<div class="item-title"><span>وجبة صغير</span><span>١٥ ريال</span></div>
+<div class="item-desc">شاورما دجاج + بطاطس + بيبسي</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span>وجبة كبير</span><span>١٨ ريال</span></div>
+<div class="item-desc">شاورما دجاج + بطاطس + بيبسي</div>
+</div>
+
+</div>
+
+<!-- عربي دجاج -->
+<div class="section">
+<h2>🍗 شاورما دجاج عربي</h2>
+
+<div class="item"><div class="item-title"><span>صغير</span><span>١٥ ريال</span></div></div>
+<div class="item"><div class="item-title"><span>وسط</span><span>٢٠ ريال</span></div></div>
+<div class="item"><div class="item-title"><span>كبير</span><span>٢٥ ريال</span></div></div>
+<div class="item-desc">خبز صاج – ثوم، بطاطس، خس</div>
+
+</div>
+
+<!-- اللحم -->
+<div class="section">
+<h2>🥩 اللحم</h2>
+
+<div class="item">
+<div class="item-title"><span>شاورما لحم راهي – صغير</span><span>٨ ريال</span></div>
+<div class="item-desc">بقدونس، طماطم، بصل، طحينية، معبوج</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span>شاورما لحم كلاسيك – صغير</span><span>٨ ريال</span></div>
+<div class="item-desc">بقدونس، طماطم، بصل، طحينية</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span>شاورما لحم استوك – صغير</span><span>٨ ريال</span></div>
+<div class="item-desc">طحينية، بطاطس، معبوج</div>
+</div>
+
+</div>
+
+<!-- وجبات لحم -->
+<div class="section">
+<h2>🥩 شاورما لحم (وجبات)</h2>
+
+<div class="item">
+<div class="item-title"><span>وجبة صغير</span><span>١٦ ريال</span></div>
+<div class="item-desc">شاورما + بطاطس + بيبسي</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span>وجبة كبير</span><span>١٩ ريال</span></div>
+<div class="item-desc">شاورما + بطاطس + بيبسي</div>
+</div>
+
+</div>
+
+<!-- مشكل -->
+<div class="section">
+<h2>🔥 شاورما مشكل</h2>
+
+<div class="item"><div class="item-title"><span>صغير (٦ قطع)</span><span>١٨ ريال</span></div></div>
+<div class="item"><div class="item-title"><span>وسط (٩ قطع)</span><span>٢٢ ريال</span></div></div>
+<div class="item"><div class="item-title"><span>كبير (١٢ قطعة)</span><span>٢٦ ريال</span></div></div>
+<div class="item-desc">لحم + دجاج – بقدونس، طماطم، بصل، طحينية</div>
+
+</div>
+
+<!-- همبرجر -->
+<div class="section">
+<h2>🍔 همبرجر</h2>
+
+<div class="item"><div class="item-title"><span>همبرجر دجاج</span><span>١٠ ريال</span></div></div>
+<div class="item"><div class="item-title"><span>همبرجر لحم</span><span>١٠ ريال</span></div></div>
+
+<div class="item">
+<div class="item-title"><span>وجبة همبرجر</span><span>١٨ ريال</span></div>
+<div class="item-desc">همبرجر + بطاطس + بيبسي</div>
+</div>
+
+</div>
+
+<!-- كودو -->
+<div class="section">
+<h2>🌯 كودو</h2>
+
+<div class="item"><div class="item-title"><span>كودو دجاج</span><span>١٠ ريال</span></div></div>
+<div class="item"><div class="item-title"><span>وجبة كودو</span><span>١٨ ريال</span></div></div>
+
+</div>
+
+<!-- البطاطس -->
+<div class="section">
+<h2>🍟 البطاطس</h2>
+
+<div class="item"><div class="item-title"><span>صغير</span><span>٥ ريال</span></div></div>
+<div class="item"><div class="item-title"><span>وسط</span><span>٨ ريال</span></div></div>
+<div class="item"><div class="item-title"><span>كبير</span><span>١٤ ريال</span></div></div>
+
+</div>
+
+<!-- المشروبات -->
+<div class="section">
+<h2>🥤 المشروبات</h2>
+
+<div class="item"><div class="item-title"><span>بيبسي</span><span>٣ ريال</span></div></div>
+<div class="item"><div class="item-title"><span>ميرندا</span><span>٣ ريال</span></div></div>
+<div class="item"><div class="item-title"><span>سفن أب</span><span>٣ ريال</span></div></div>
+<div class="item"><div class="item-title"><span>ماء صغير</span><span>٠٫٥ ريال</span></div></div>
+<div class="item"><div class="item-title"><span>ماء كبير</span><span>١ ريال</span></div></div>
+
+</div>
+
+<div class="footer">
+📞 جوال: <br>
+💬 واتساب:
+</div>
 
 </body>
 </html>
