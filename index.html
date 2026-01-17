@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شاورما راهي</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ffffff">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header img {
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.section {
+    padding: 15px;
+}
+
+.section h2 {
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+}
+
+.item {
+    margin-bottom: 14px;
+}
+
+.item-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.item-desc {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <img src="logo.png" alt="شاورما راهي">
+    <h1>شاورما راهي</h1>
+</div>
+
+<div class="section">
+<h2>🍗 الدجاج</h2>
+
+<div class="item">
+<div class="item-title"><span>شاورما راهي – صغير</span><span>٧ ريال</span></div>
+<div class="item-desc">ثوم، بطاطس، خس، معبوج</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span>شاورما كلاسيك – صغير</span><span>٧ ريال</span></div>
+<div class="item-desc">ثوم، بطاطس، خس</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span>شاورما استوك – صغير</span><span>٧ ريال</span></div>
+<div class="item-desc">ثوم، بطاطس، معبوج</div>
+</div>
+</div>
+
+<div class="footer">
+📞 جوال:<br>
+💬 واتساب:
+</div>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+</body>
+</html>
