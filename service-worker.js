@@ -1,4 +1,4 @@
-const CACHE_NAME = "shawarma-rahi-v1";
+const CACHE_NAME = "shawarma-rahi-v2";
 const urlsToCache = [
   "index.html",
   "logo.png",
